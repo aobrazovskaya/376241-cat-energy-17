@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анна Образовская](https://up.htmlacademy.ru/adaptive/17/user/376241).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Фарига](https://htmlacademy.ru/profile/maximfariga).
 
 ---
 
