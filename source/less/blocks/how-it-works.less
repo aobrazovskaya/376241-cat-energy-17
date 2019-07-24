@@ -2,3 +2,65 @@
   width: 320px;
   margin: 0 auto;
 }
+
+.how-it-works__title {
+  margin: 0;
+
+  font-size: 36px;
+  line-height: 60px;
+  color: @dark-color;
+}
+
+.how-it-works__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.how-it-works__item {
+  display: flex;
+  position: relative;
+
+  margin-bottom: 20px;
+  color: @lightdark-color;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+    background-color: @app-bg-color;
+    width: 60px;
+    height: 60px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8%;
+    left: 0;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+  }
+
+  &--nutrients::after {
+    background-image: url("../../img/advantage-leaf@1x.png");
+  }
+
+  &--powder::after {
+    background-image: url("../../img/advantage-powder@1x.png");
+  }
+
+  &--nutrition::after {
+    background-image: url("../../img/advantage-dining@1x.png");
+  }
+
+  &--effect::after {
+    background-image: url("../../img/advantage-clock@1x.png");
+  }
+}
+
+.how-it-works__item p {
+  margin: 0;
+}

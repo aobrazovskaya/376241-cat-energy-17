@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
   min-width: 320px;
   margin: 0;
@@ -9,8 +13,12 @@ body {
   color: #000000;
   font-style: normal;
 
-  background-color: @white-color;
+  background-color: @main-bg-color;
 
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
 }
 
 a {
@@ -22,6 +30,8 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;

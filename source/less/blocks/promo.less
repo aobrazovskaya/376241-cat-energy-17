@@ -4,29 +4,40 @@
   margin: 0 auto;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: @app-bg-color;
 }
 
 .promo__title {
   margin: 0;
+  padding-top: 29px;
+  padding-bottom: 19px;
 
   font-size: 36px;
   font-weight: normal;
   line-height: 36px;
-  color: @white-color;
+  color: @main-bg-color;
+  text-align: center;
 }
 
 .promo__item {
+  padding-bottom: 29px;
   line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
 
-  color: @white-color;
+  color: @main-bg-color;
 }
 
 .promo__button {
-  padding-top: 10px;
-  padding-left: 73px;
-  padding-right: 74px;
-  padding-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  color: @white-color;
-  background-color: @green-color;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  color: @main-bg-color;
+  background-color: @app-bg-color;
 }
