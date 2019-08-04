@@ -1,43 +1,42 @@
 .promo {
-  width: 320px;
+  width: 100%;
   height: 305px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: top;
   background-color: @app-bg-color;
 }
 
 .promo__title {
+  width: 320px;
   margin: 0;
   padding-top: 29px;
-  padding-bottom: 19px;
+  padding-bottom: 24px;
 
   font-size: 36px;
   font-weight: normal;
   line-height: 36px;
-  color: @main-bg-color;
   text-align: center;
+  color: @main-color;
 }
 
 .promo__item {
-  padding-bottom: 29px;
+  margin: 0;
+  padding-bottom: 28px;
   line-height: 14px;
-  text-align: center;
   text-transform: uppercase;
 
-  color: @main-bg-color;
+  color: @main-color;
 }
 
 .promo__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
-
-  color: @main-bg-color;
-  background-color: @app-bg-color;
+  margin-top: 4px;
 }

@@ -1,4 +1,75 @@
 .page-footer {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: @items-bg-color;
+}
+
+.page-footer__logo {
+  margin-top: 39px;
+  margin-bottom: 29px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  width: 320px;
+  min-height: 62px;
+
+  list-style: none;
+  border-top: 1px solid #0000001a;
+  border-bottom: 1px solid #0000001a;
+}
+
+.social__item {
+  margin-right: 33px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  display: block;
+  width: 22px;
+  height: 20px;
+
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vkontakte {
+    background-image: url("../../img/icon-vk.svg");
+  }
+
+  &--instagram {
+    background-image: url("../../img/icon-insta.svg");
+  }
+
+  &--facebook {
+    background-image: url("../../img/icon-fb.svg");
+  }
+}
+
+.developer {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0;
+  width: 280px;
+
+}
+
+.developer__title {
+    color: @lightdark-color;
+    font-family: @ArialMT;
+    font-size: 16px;
+    line-height: 16px;
 }

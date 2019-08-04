@@ -7,13 +7,16 @@ body {
   margin: 0;
   padding: 0;
 
+  display: flex;
+  flex-direction: column;
+
   font-size: 14px;
   line-height: 18px;
   font-family: "Oswald", sans-serif;
   color: #000000;
   font-style: normal;
 
-  background-color: @main-bg-color;
+  background-color: @main-color;
 
 }
 
@@ -30,8 +33,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;

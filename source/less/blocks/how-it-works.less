@@ -1,13 +1,17 @@
 .how-it-works {
   width: 320px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .how-it-works__title {
   margin: 0;
+  margin-bottom: 30px;
 
+  font-weight: normal;
   font-size: 36px;
-  line-height: 60px;
+  line-height: 53px;
   color: @dark-color;
 }
 
@@ -20,43 +24,37 @@
 
 .how-it-works__item {
   display: flex;
-  position: relative;
-
+  align-items: center;
   margin-bottom: 20px;
   color: @lightdark-color;
+  font-family: @ArialMT;
 
   &::before {
     content: "";
-    display: inline-block;
     margin-right: 20px;
+
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+
     background-color: @app-bg-color;
-    width: 60px;
-    height: 60px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 8%;
-    left: 0;
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-  }
-
-  &--nutrients::after {
+  &--nutrients::before {
     background-image: url("../../img/advantage-leaf@1x.png");
   }
 
-  &--powder::after {
+  &--powder::before {
     background-image: url("../../img/advantage-powder@1x.png");
   }
 
-  &--nutrition::after {
+  &--nutrition::before {
     background-image: url("../../img/advantage-dining@1x.png");
   }
 
-  &--effect::after {
+  &--effect::before {
     background-image: url("../../img/advantage-clock@1x.png");
   }
 }
