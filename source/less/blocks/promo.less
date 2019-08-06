@@ -1,23 +1,18 @@
 .promo {
-  width: 100%;
-  height: 305px;
+  min-height: 305px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 22px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background:url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, @app-bg-color 0, @app-bg-color 305px, transparent 306px, transparent 405px);
   background-repeat: no-repeat;
   background-position: top;
-  background-color: @app-bg-color;
 }
 
 .promo__title {
   width: 320px;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 29px;
   padding-bottom: 24px;
 

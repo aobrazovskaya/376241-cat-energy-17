@@ -1,7 +1,6 @@
 .programs {
   width: 320px;
   margin: 0 auto;
-  margin-top: 197px;
 }
 
 .programs__list {
@@ -11,13 +10,26 @@
 }
 
 .programs__item {
-  position: relative;
   width: 280px;
   margin: 0 auto;
   margin-bottom: 20px;
   min-height: 266px;
 
   background-color: @items-bg-color;
+}
+
+.programs__title {
+  position: relative;
+  margin: 0;
+  padding-left: 91px;
+  padding-top: 30px;
+  padding-bottom: 29px;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 37px;
+  color: @dark-color;
+  text-transform: uppercase;
 
   &::before {
     content: "";
@@ -43,19 +55,6 @@
     background-size: 98%, 100%;
     background-position: left center, top;
   }
-}
-
-.programs__title {
-  margin: 0;
-  padding-left: 91px;
-  padding-top: 30px;
-  padding-bottom: 29px;
-
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 37px;
-  color: @dark-color;
-  text-transform: uppercase;
 }
 
 .programs__descr {
