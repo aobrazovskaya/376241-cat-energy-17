@@ -1,0 +1,99 @@
+.programs {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.programs__item {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  min-height: 266px;
+
+  background-color: @items-bg-color;
+}
+
+.programs__title {
+  position: relative;
+  margin: 0;
+  padding-left: 91px;
+  padding-top: 30px;
+  padding-bottom: 29px;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 37px;
+  color: @dark-color;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    display: inline-block;
+
+    width: 70px;
+    height: 70px;
+  }
+
+  &--slim::before {
+    background: url("../../img/icon-cat-slim.svg"), radial-gradient(circle, green 50%, transparent 52%);
+    background-repeat: no-repeat;
+    background-size: 50%, 100%;
+    background-position: 20px 10px, top;
+  }
+
+  &--pro::before {
+    background: url("../../img/icon-cat-pro.svg"), radial-gradient(circle, green 50%, transparent 52%);
+    background-repeat: no-repeat;
+    background-size: 98%, 100%;
+    background-position: left center, top;
+  }
+}
+
+.programs__descr {
+  margin-bottom: 22px;
+  padding-left: 21px;
+  padding-right: 21px;
+
+  font-family: @ArialMT;
+  color: @lightdark-color;
+}
+
+.programs__descr p {
+  margin: 0;
+}
+
+.programs__link {
+  position: relative;
+  display: block;
+  margin: 0 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 16px;
+  color: @dark-color;
+  text-transform: uppercase;
+
+  border-top: @border;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 22px;
+    right: 50%;
+
+    width: 25px;
+    height: 12px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+  }
+}
