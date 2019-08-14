@@ -1,6 +1,17 @@
 .programs {
-  width: 320px;
-  margin: 0 auto;
+  margin: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .programs {
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs {
+    margin: 0 110px 60px;
+  }
 }
 
 .programs__list {
@@ -9,21 +20,45 @@
   list-style: none;
 }
 
+@media (min-width: @desktop-width) {
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .programs__item {
-  width: 280px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  min-height: 266px;
+  margin-bottom: 30px;
+  padding: 20px 20px 0;
 
   background-color: @items-bg-color;
+}
+
+@media (min-width: @tablet-width) {
+  .programs__item {
+    padding-top: 75px;
+    padding-left: 53px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs__item {
+    margin: 0;
+    padding-top: 47px;
+    padding-left: 52px;
+    padding-right: 55px;
+    width: 46.5%;
+  }
 }
 
 .programs__title {
   position: relative;
   margin: 0;
-  padding-left: 91px;
-  padding-top: 30px;
-  padding-bottom: 29px;
+  padding-left: 71px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 
   font-size: 24px;
   font-weight: normal;
@@ -34,36 +69,108 @@
   &::before {
     content: "";
     position: absolute;
-    top: 14px;
-    left: 12px;
-    display: inline-block;
+    top: -5px;
+    left: 0;
 
     width: 70px;
     height: 70px;
   }
 
   &--slim::before {
-    background: url("../../img/icon-cat-slim.svg"), radial-gradient(circle, green 50%, transparent 52%);
+    background: url("../../img/icon-cat-slim.svg"), radial-gradient(circle, green 50%, transparent 51%);
     background-repeat: no-repeat;
     background-size: 50%, 100%;
     background-position: 20px 10px, top;
   }
 
   &--pro::before {
-    background: url("../../img/icon-cat-pro.svg"), radial-gradient(circle, green 50%, transparent 52%);
+    background: url("../../img/icon-cat-pro.svg"), radial-gradient(circle, green 50%, transparent 51%);
     background-repeat: no-repeat;
     background-size: 98%, 100%;
     background-position: left center, top;
   }
 }
 
+@media (min-width: @tablet-width) {
+  .programs__title {
+    padding-left: 0;
+    padding-top: 0;
+    font-size: 36px;
+
+    &::before {
+      top: 0;
+      left: auto;
+      right: 0;
+
+      width: 270px;
+      height: 270px;
+    }
+
+    &--slim::before {
+      background-position: 66px 9px, 0px -20px;
+    }
+
+    &--pro::before {
+      background-position: 0 61px, 0px -20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs__title {
+    margin-bottom: 40px;
+    padding-left: 164px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &::before {
+      top: 0;
+      left: 0;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::before {
+      background-position: 25px 10px, 0 0;
+    }
+
+    &--pro::before {
+      background-position: -5px 30px, 0 0;
+    }
+  }
+}
+
 .programs__descr {
   margin-bottom: 22px;
-  padding-left: 21px;
-  padding-right: 21px;
 
-  font-family: @ArialMT;
+  font-family: @second-font;
   color: @lightdark-color;
+}
+
+@media (min-width: @tablet-width) {
+  .programs__descr {
+    margin-bottom: 40px;
+    padding-left: 0;
+    padding-right: 0;
+
+    line-height: 24px;
+
+    &--slim {
+      width: 330px;
+    }
+
+    &--pro {
+      width: 300px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs__descr {
+    margin-bottom: 20px;
+    width: 430px;
+  }
 }
 
 .programs__descr p {
@@ -72,8 +179,8 @@
 
 .programs__link {
   position: relative;
-  display: block;
-  margin: 0 20px;
+  display: flex;
+  align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -87,13 +194,16 @@
 
   &::after {
     content: "";
-    display: inline-block;
-    position: absolute;
-    top: 22px;
-    right: 50%;
-
+    margin: 0 0 0 4px;
     width: 25px;
     height: 12px;
     background-image: url("../../img/icon-right-arrow-long.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .programs__link {
+    margin: 0;
+    border-top: none;
   }
 }

@@ -8,9 +8,17 @@
   text-align: center;
   background-color: @items-bg-color;
   text-transform: uppercase;
+
+  &--green {
+    color: @main-color;
+    background-color: @app-bg-color;
+  }
 }
 
-.button--green {
-  color: @main-color;
-  background-color: @app-bg-color;
+
+@media (min-width: @tablet-width) {
+  .button {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
