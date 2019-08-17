@@ -10,7 +10,7 @@
 
 @media (min-width: @desktop-width) {
   .how-it-works {
-    margin: 0 110px;
+    margin: 0 40px;
   }
 }
 
@@ -26,7 +26,7 @@
 
 @media (min-width: @tablet-width) {
   .how-it-works__title {
-    margin-bottom: 60px;
+    margin-bottom: 72px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -53,7 +53,6 @@
 @media (min-width: @desktop-width) {
   .how-it-works__list {
     flex-wrap: nowrap;
-    justify-content: space-between;
   }
 }
 
@@ -105,13 +104,18 @@
 
 @media (min-width: @desktop-width) {
   .how-it-works__item {
+    margin-right: 87px;
     width: 240px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 }
 
 @media (min-width: @tablet-width) {
   .how-it-works__item::before {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
     width: 80px;
     height: 80px;
   }
@@ -124,6 +128,7 @@
 @media (min-width: @tablet-width) {
   .how-it-works__item p {
     margin: 0;
+    width: 245px;
     font-size: 16px;
     line-height: 24px;
   }
