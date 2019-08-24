@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 0 20px 32px;
+  padding: 3px 20px 32px;
   background-color: @items-bg-color;
 }
 
@@ -15,7 +15,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 94px;
+  height: 92px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -31,7 +39,7 @@
   margin: 0;
   padding: 0;
 
-  min-height: 62px;
+  min-height: 64px;
 
   list-style: none;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -47,7 +55,7 @@
 }
 
 .social__item {
-  margin-right: 33px;
+  margin-right: 35px;
 
   &:last-child {
     margin-right: 0;
@@ -63,22 +71,44 @@
 .social__link {
   display: block;
   width: 22px;
-  height: 20px;
+  height: 19px;
 
   font-size: 0;
   background-repeat: no-repeat;
   background-position: center;
 
   &--vkontakte {
-    background-image: url("../../img/icon-vk.svg");
+    svg {
+      width: 22px;
+      height: 12px;
+    }
   }
 
   &--instagram {
-    background-image: url("../../img/icon-insta.svg");
+    svg {
+      width: 17px;
+      height: 17px;
+    }
   }
 
   &--facebook {
-    background-image: url("../../img/icon-fb.svg");
+    svg {
+      width: 10px;
+      height: 19px;
+    }
+  }
+
+  svg {
+    vertical-align: middle;
+  }
+
+  :hover,
+  :focus {
+    fill: @app-bg-color;
+  }
+
+  :focus {
+    opacity: 0.3;
   }
 }
 
@@ -92,7 +122,7 @@
 .developer {
   display: flex;
   justify-content: space-between;
-  margin: 32px 0 0;
+  margin: 17px 0 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -100,7 +130,6 @@
     margin: 0;
   }
 }
-
 
 .developer__title {
   display: flex;
@@ -110,10 +139,31 @@
   font-family: @second-font;
   font-size: 16px;
   line-height: 16px;
+
+  :focus {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .developer__title {
     padding-right: 20px;
+  }
+}
+
+.developer__logo {
+  margin-right: -8px;
+  width: 42px;
+  height: 42px;
+}
+
+.developer__logo svg {
+  :hover,
+  :focus {
+    fill: @app-bg-color;
+  }
+
+  :focus {
+    opacity: 0.3;
   }
 }

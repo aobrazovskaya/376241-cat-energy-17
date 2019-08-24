@@ -1,0 +1,262 @@
+.form__main-data {
+  margin: 0;
+  padding: 0 20px 10px;
+  border: none;
+  border-bottom: @form-border;
+}
+
+.main-data__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-data__item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 14px;
+
+  color: @text-form-color;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.main-data__input {
+  flex-grow: 1;
+  margin-left: 14px;
+  padding-top: 13px;
+  padding-left: 15px;
+  padding-bottom: 12px;
+
+  color: @lightdark-color;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: @form-border;
+}
+
+.form__progr-filter {
+  margin: 0;
+  padding: 21px 20px 8px;
+
+  border: none;
+  border-bottom: @form-border;
+}
+
+.progr-filter__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.progr-filter__item {
+  position: relative;
+  margin-bottom: 12px;
+  padding-top: 6px;
+  padding-left: 46px;
+  padding-bottom: 6px;
+
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.progr-filter__input {
+  display: none;
+
+  &:checked ~ label::before {
+    background: radial-gradient(circle, @app-bg-color 0%, @app-bg-color 30%, @app-bg-color 31%, @main-color 32%, @main-color 100%);
+  }
+}
+
+.progr-filter__item label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: @form-border;
+}
+
+.form__userdata {
+  margin-top: 13px;
+  margin-left: 20px;
+  margin-right: 0;
+  padding: 0 20px 14px 0;
+  border-top: 3px solid @app-bg-color;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.userdata__title {
+  margin-bottom: 33px;
+  padding-top: 15px;
+  width: 200px;
+
+  font-size: 24px;
+  line-height: 24px;
+  color: @dark-color;
+}
+
+.userdata__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.userdata__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+
+  font-size: 16px;
+  color: @text-form-color;
+  text-transform: uppercase;
+}
+
+.userdata__input {
+  position: relative;
+  flex-grow: 1;
+  margin-left: 11px;
+  padding-top: 13px;
+  padding-left: 14px;
+  padding-bottom: 13px;
+
+  color: @lightdark-color;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: @form-border;
+}
+
+.userdata__icon {
+  position: absolute;
+  right: 34px;
+  fill: @text-form-color;
+
+  &--email {
+    width: 18px;
+    height: 14px;
+  }
+
+  &--phone {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+.form__comments {
+  margin-left: 20px;
+  margin-right: 0;
+  padding: 0 20px 25px 0;
+  border-top: 3px solid @app-bg-color;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.comments__title {
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  width: 145px;
+
+  font-size: 24px;
+  line-height: 24px;
+  color: @dark-color;
+}
+
+.comments__text {
+  padding-top: 12px;
+  padding-left: 14px;
+  width: 100%;
+  height: 150px;
+
+  color: @lightdark-color;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: @form-border;
+}
+
+.form__additionally {
+  margin-right: 0;
+  margin-left: 20px;
+  margin-bottom: 35px;
+  padding: 0 20px 0 0;
+  border-top: 3px solid @app-bg-color;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.additionally__title {
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  width: 165px;
+
+  font-size: 24px;
+  line-height: 24px;
+  color: @dark-color;
+}
+
+.additionally__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.additionally__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+  padding-top: 4px;
+  padding-left: 46px;
+  padding-bottom: 7px;
+
+  font-size: 16px;
+  text-transform: uppercase;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.additionally__input {
+  display: none;
+
+  &:checked ~ label::before {
+    background-image: url("../../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 17px;
+    background-position: center;
+  }
+}
+
+.additionally__item label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: @form-border;
+}
+
+.form__button {
+  margin-bottom: 21px;
+  padding: 0 20px 0;
+}
+
+.form__text-note {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 16px;
+  font-family: @second-font;
+}
