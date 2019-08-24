@@ -95,10 +95,39 @@
 
 @media (min-width: @tablet-width) {
   .how-it-works__item {
+    position: relative;
     flex-direction: column;
     width: 46%;
     min-height: 233px;
     margin-bottom: 85px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 125px;
+      display: inline-block;
+      z-index: -1;
+      color: @items-bg-color;
+      font-size: 281px;
+      height: 281px;
+      font-family: "Oswald";
+    }
+  
+    &--nutrients::after {
+      content: "1";
+    }
+  
+    &--powder::after {
+      content: "2";
+    }
+  
+    &--nutrition::after {
+      content: "3";
+    }
+  
+    &--effect::after {
+      content: "4";
+    }
   }
 }
 
