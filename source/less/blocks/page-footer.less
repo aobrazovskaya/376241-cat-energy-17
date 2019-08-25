@@ -6,8 +6,16 @@
 @media (min-width: @tablet-width) {
   .page-footer {
     display: flex;
+    padding: 0 30px 0;
+    justify-content: center;
     align-items: center;
-    padding: 58px 30px 58px;
+    min-height: 150px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding: 0 40px 0;
   }
 }
 
@@ -28,17 +36,25 @@
 
 @media (min-width: @tablet-width) {
   .page-footer__logo {
-    height: 24px;
+    justify-content: flex-start;
+    width: 33.333333%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__social {
+    width: 33.333333%;
   }
 }
 
 .social__list {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
 
+  width: 100%;
   min-height: 64px;
 
   list-style: none;
@@ -55,7 +71,8 @@
 }
 
 .social__item {
-  margin-right: 35px;
+  margin-right: 25px;
+  width: 32px;
 
   &:last-child {
     margin-right: 0;
@@ -64,39 +81,18 @@
 
 @media (min-width: @tablet-width) {
   .social__item {
-    margin-right: 23px;
+    margin-right: 15px;
+    width: 40px;
   }
 }
 
 .social__link {
   display: block;
-  width: 22px;
-  height: 19px;
-
+  padding: 5px;
   font-size: 0;
+  line-height: 1px;
   background-repeat: no-repeat;
   background-position: center;
-
-  &--vkontakte {
-    svg {
-      width: 22px;
-      height: 12px;
-    }
-  }
-
-  &--instagram {
-    svg {
-      width: 17px;
-      height: 17px;
-    }
-  }
-
-  &--facebook {
-    svg {
-      width: 10px;
-      height: 19px;
-    }
-  }
 
   svg {
     vertical-align: middle;
@@ -114,8 +110,20 @@
 
 @media (min-width: @tablet-width) {
   .social__link {
-    width: 30px;
-    height: 28px;
+    &--vkontakte svg{
+      width: 30px;
+      height: 16px;
+    }
+
+    &--instagram svg{
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook svg{
+      width: 14px;
+      height: 28px;
+    }
   }
 }
 
@@ -127,7 +135,9 @@
 
 @media (min-width: @tablet-width) {
   .developer {
+    justify-content: flex-end;
     margin: 0;
+    width: 33.333333%;
   }
 }
 

@@ -4,7 +4,8 @@
 
 @media (min-width: @tablet-width) {
   .how-it-works {
-    margin: 0 30px;
+    margin-left: 30px;
+    margin-right: 0;
   }
 }
 
@@ -33,10 +34,7 @@
 }
 
 .how-it-works__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
@@ -44,27 +42,31 @@
 
 @media (min-width: @tablet-width) {
   .how-it-works__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    counter-reset: howitwork;
   }
 }
 
 @media (min-width: @desktop-width) {
   .how-it-works__list {
-    flex-wrap: nowrap;
   }
 }
 
 .how-it-works__item {
-  display: flex;
-  align-items: center;
+  position: relative;
+  counter-increment: howitwork;
+  display: block;
   margin-bottom: 20px;
-
+  padding-top: 4px;
+  padding-left: 80px;
+  padding-bottom: 3px;
+  min-height: 60px;
   color: @lightdark-color;
   font-family: @second-font;
 
   &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
     content: "";
     margin-right: 20px;
 
@@ -96,57 +98,52 @@
 
 @media (min-width: @tablet-width) {
   .how-it-works__item {
-    position: relative;
-    flex-direction: column;
-    width: 46%;
-    min-height: 233px;
-    margin-bottom: 85px;
+    display: inline-block;
+    width: 31%;
+    min-height: 254px;
+    margin-right: 151px;
+    margin-bottom: 62px;
+    padding-top: 111px;
+    padding-left: 0;
+    
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
 
     &::after {
       position: absolute;
+      content: counter(howitwork);
       top: 0;
-      left: 125px;
-      display: inline-block;
+      left: 52%;
+      text-align: left;
       z-index: -1;
+
+      margin-top: -40px;
       color: @items-bg-color;
       font-size: 281px;
-      height: 281px;
-    }
-
-    &--nutrients::after {
-      content: "1";
-    }
-
-    &--powder::after {
-      content: "2";
-    }
-
-    &--nutrition::after {
-      content: "3";
-    }
-
-    &--effect::after {
-      content: "4";
+      font-family: @main-font;
+      line-height: 281px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .how-it-works__item {
-    margin-right: 87px;
-    width: 240px;
-
+    width: 18%;
+    margin-right: 102px;
+    
+    &:nth-child(2n) {
+      margin-right: 102px;
+    }
+    
     &:nth-child(4n) {
       margin-right: 0;
     }
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .how-it-works__item::before {
-    margin-bottom: 34px;
-    width: 80px;
-    height: 80px;
   }
 }
 
