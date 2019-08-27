@@ -13,16 +13,16 @@
 @media (min-width: @tablet-width) {
   .promo {
     padding: 0;
-    padding-left: 120px;
+    padding-left: 119px;
     background: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .promo {
-    margin-top: -179px;
+    margin-top: -165px;
     margin-bottom: 80px;
-    padding-left: 192px;
+    padding-left: 120px;
     min-height: 696px;
 
     background-image: linear-gradient(to left, @app-bg-color 0, @app-bg-color 50%, transparent 50%, transparent 100%);
@@ -32,8 +32,8 @@
 
 .promo__title {
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 24px;
+  padding-top: 28px;
+  padding-bottom: 25px;
 
   font-size: 36px;
   font-weight: normal;
@@ -44,7 +44,7 @@
 
 @media (min-width: @tablet-width) {
   .promo__title {
-    padding-top: 0;
+    padding-top: 7px;
     padding-bottom: 40px;
     width: 415px;
 
@@ -80,23 +80,49 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .promo__item {
+    padding-bottom: 40px;
+  }
+}
+
 .promo__main-image {
   display: block;
   margin: 0 auto;
 }
 
+
+@media (min-width: @tablet-width) {
+  .promo__main-image {
+    position: relative;
+  }
+}
+
 .promo__button {
-  margin-top: 4px;
+  margin-top: 3px;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__button {
+    position: relative;
+    z-index: 10;
+    top: -259px;
+  }
+}
+
+.promo a {
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 @media (min-width: @tablet-width) {
   .promo a {
     width: 245px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .promo a {
-    width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }

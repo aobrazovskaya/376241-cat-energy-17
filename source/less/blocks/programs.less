@@ -10,7 +10,7 @@
 
 @media (min-width: @desktop-width) {
   .programs {
-    margin: 0 110px 60px;
+    margin: 0 40px 91px;
   }
 }
 
@@ -28,7 +28,7 @@
 }
 
 .programs__item {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 20px 20px 0;
 
   background-color: @items-bg-color;
@@ -58,7 +58,7 @@
   margin: 0;
   padding-left: 71px;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 29px;
 
   font-size: 24px;
   font-weight: normal;
@@ -70,7 +70,7 @@
     content: "";
     position: absolute;
     top: -5px;
-    left: 0;
+    left: -8px;
 
     width: 70px;
     height: 70px;
@@ -80,7 +80,7 @@
     background: url("../../img/icon-cat-slim.svg"), radial-gradient(circle, green 50%, transparent 51%);
     background-repeat: no-repeat;
     background-size: 50%, 100%;
-    background-position: 20px 10px, top;
+    background-position: 18px 8px, top;
   }
 
   &--pro::before {
@@ -93,8 +93,9 @@
 
 @media (min-width: @tablet-width) {
   .programs__title {
-    padding-left: 0;
     padding-top: 0;
+    padding-left: 0;
+    padding-right: 300px;
     font-size: 36px;
 
     &::before {
@@ -119,8 +120,9 @@
 @media (min-width: @desktop-width) {
   .programs__title {
     margin-bottom: 40px;
-    padding-left: 164px;
     padding-top: 30px;
+    padding-left: 164px;
+    padding-right: 0;
     padding-bottom: 30px;
 
     &::before {
@@ -182,7 +184,7 @@
   display: flex;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
 
   font-size: 16px;
   line-height: 16px;
@@ -194,10 +196,14 @@
 
   &::after {
     content: "";
-    margin: 0 0 0 4px;
+    margin: 0 0 0 10px;
     width: 25px;
     height: 12px;
     background-image: url("../../img/icon-right-arrow-long.svg");
+  }
+
+  &:focus {
+    opacity: 0.3;
   }
 }
 
