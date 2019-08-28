@@ -1,6 +1,26 @@
+.form {
+  padding: 15px 20px 0;
+  border-top: @border;
+}
+
+.form__header {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.form__header-text {
+  margin: 0;
+  margin-bottom: 39px;
+  width: 85%;
+  text-transform: uppercase;
+}
+
 .form__main-data {
   margin: 0;
-  padding: 0 20px 23px;
+  padding: 0 0 22px;
   border: none;
   border-bottom: @form-border;
 }
@@ -36,11 +56,21 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  border: @form-border;
+  border: @form-input;
+  outline: none;
+
+  &:hover {
+    border: @form-border;
+  }
+
+  &:focus,
+  &:active {
+    border: @form-input-active;
+  }
 }
 
 .form__progr-filter {
-  margin: 0;
+  margin: 0 -20px;
   padding: 21px 20px 10px;
 
   border: none;
@@ -144,7 +174,17 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  border: @form-border;
+  border: @form-input;
+  outline: none;
+
+  &:hover {
+    border: @form-border;
+  }
+
+  &:focus,
+  &:active {
+    border: @form-input-active;
+  }
 }
 
 .userdata__icon {

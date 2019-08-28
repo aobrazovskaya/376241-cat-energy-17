@@ -200,10 +200,24 @@
     width: 25px;
     height: 12px;
     background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+
+  }
+  
+  &:hover{
+    &::after {
+      width: 34px;
+      background-image: url("../../img/icon-right-arrow-verylong.svg");
+    }
   }
 
   &:focus {
     opacity: 0.3;
+
+    &::after {
+      width: 34px;
+      background-image: url("../../img/icon-right-arrow-verylong.svg");
+    }
   }
 }
 
@@ -211,5 +225,8 @@
   .programs__link {
     margin: 0;
     border-top: none;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }

@@ -1,13 +1,13 @@
 .page-header {
   position: relative;
   margin: 0 20px;
+  align-items: center;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
     display: flex;
-    margin-top: 24px;
-    margin-bottom: 50px;
+    margin: 24px 0 50px;
     padding: 0 30px;
     min-height: 59px;
   }
@@ -25,12 +25,23 @@
   padding: 12px 0 15px;
   display: inline-block;
   vertical-align: top;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
     margin: auto 0;
     padding: 0;
+
+    width: 174px;
+    height: 59px;
   }
 }
 
