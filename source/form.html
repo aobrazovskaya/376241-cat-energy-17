@@ -37,47 +37,49 @@
     <main class="page-main">
       <h1 class="visually-hidden">Форма</h1>
       <form class="form" method="POST" action="https://echo.htmlacademy.ru">
-        <h2 class="form__header">Подбор программы</h1>
-        <p class="form__header-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <fieldset class="form__main-data">
+        <div class="form-header">
+          <h2 class="form-header__title">Подбор программы</h2>
+          <p class="form-header__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        </div>
+        <fieldset class="main-data">
           <legend class="visually-hidden">Основные данные:</legend>
           <ul class="main-data__list">
             <li class="main-data__item">
-              <label for="form-name">Имя:*</label>
+              <label class="main-data__label" for="form-name">Имя:*</label>
               <input class="main-data__input" id="form-name" name="name" type="text" placeholder="Барсик" required>
             </li>
             <li class="main-data__item">
-              <label for="form-weight">Вес (кг):*</label>
+              <label class="main-data__label" for="form-weight">Вес (кг):*</label>
               <input class="main-data__input" id="form-weight" name="weight" type="number" placeholder="7" required>
             </li>
             <li class="main-data__item">
-              <label for="form-age">Возраст (лет):</label>
+              <label class="main-data__label" for="form-age">Возраст (лет):</label>
               <input class="main-data__input" id="form-age" name="age" type="number" placeholder="7">
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__progr-filter">
+        <fieldset class="programs-filter">
           <legend class="visually-hidden">Вид программы:</legend>
-          <ul class="progr-filter__list">
-            <li class="progr-filter__item">
-              <input class="progr-filter__input" id="filter-slim" name="filter-program" value="slim" type="radio" checked>
-              <label for="filter-slim">Похудение</label>
+          <ul class="programs-filter__list">
+            <li class="programs-filter__item">
+              <input class="programs-filter__input" id="filter-slim" name="filter-program" value="slim" type="radio" checked>
+              <label class="programs-filter__label" for="filter-slim">Похудение</label>
             </li>
-            <li class="progr-filter__item">
-              <input class="progr-filter__input" id="filter-pro" name="filter-program" value="pro" type="radio">
-              <label for="filter-pro">Набор массы</label>
+            <li class="programs-filter__item">
+              <input class="programs-filter__input" id="filter-pro" name="filter-program" value="pro" type="radio">
+              <label class="programs-filter__label" for="filter-pro">Набор массы</label>
             </li>
-            <li class="progr-filter__item">
-              <input class="progr-filter__input" id="filter-no-program" name="filter-program" value="no-program" type="radio">
-              <label for="filter-no-program">Не знаю (нужен ваш совет)</label>
+            <li class="programs-filter__item">
+              <input class="programs-filter__input" id="filter-no-program" name="filter-program" value="no-program" type="radio">
+              <label class="programs-filter__label" for="filter-no-program">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__userdata">
+        <fieldset class="userdata">
           <legend class="userdata__title">Контактные данные (владельца кота)</legend>
           <ul class="userdata__list">
             <li class="userdata__item">
-              <label for="user-email">E-mail:*</label>
+              <label class="userdata__label" for="user-email">E-mail:*</label>
               <input class="userdata__input userdata__input--email" id="user-email" name="email" type="email" placeholder="kuklachev@gmail.com" required>
               <span class="userdata__icon userdata__icon--email">
                 <svg width="18px" height="14px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;">
@@ -86,7 +88,7 @@
               </span>
             </li>
             <li class="userdata__item">
-              <label for="user-phone">Телефон:*</label>
+              <label class="userdata__label" for="user-phone">Телефон:*</label>
               <input class="userdata__input userdata__input--phone" id="user-phone" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
               <span class="userdata__icon userdata__icon--phone">
                 <svg width="21px" height="21px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;">
@@ -101,28 +103,28 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__comments">
+        <fieldset class="comments">
           <legend class="comments__title">Комментарий</legend>
           <textarea class="comments__text" name="comments" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="form__additionally">
+        <fieldset class="additionally">
           <legend class="additionally__title">Дополнительно</legend>
           <ul class="additionally__list">
             <li class="additionally__item">
               <input class="additionally__input" id="filter-sweetener" name="add-filter" value="sweetener" type="checkbox" checked>
-              <label for="filter-sweetener">Сахарозаменитель</label>
+              <label class="additionally__label" for="filter-sweetener">Сахарозаменитель</label>
             </li>
             <li class="additionally__item">
               <input class="additionally__input" id="filter-water" name="add-filter" value="water" type="checkbox">
-              <label for="filter-water">Питьевая вода</label>
+              <label class="additionally__label" for="filter-water">Питьевая вода</label>
             </li>
             <li class="additionally__item">
               <input class="additionally__input" id="filter-milk" name="add-filter" value="milk" type="checkbox">
-              <label for="filter-milk">Молоко</label>
+              <label class="additionally__label" for="filter-milk">Молоко</label>
             </li>
             <li class="additionally__item">
               <input class="additionally__input" id="filter-vitamins" name="add-filter" value="vitamins" type="checkbox">
-              <label for="filter-vitamins">Витамины</label>
+              <label class="additionally__label" for="filter-vitamins">Витамины</label>
             </li>
           </ul>
         </fieldset>

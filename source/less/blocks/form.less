@@ -1,9 +1,16 @@
-.form {
+.form-header {
   padding: 15px 20px 0;
   border-top: @border;
 }
 
-.form__header {
+@media (min-width: @tablet-width) {
+  .form-header {
+    padding: 15px 20px 0;
+    border-top: none;
+  }
+}
+
+.form-header__title {
   margin: 0;
   margin-bottom: 25px;
 
@@ -11,16 +18,16 @@
   line-height: 60px;
 }
 
-.form__header-text {
+.form-header__text {
   margin: 0;
   margin-bottom: 39px;
   width: 85%;
   text-transform: uppercase;
 }
 
-.form__main-data {
+.main-data {
   margin: 0;
-  padding: 0 0 22px;
+  padding: 0 20px 22px;
   border: none;
   border-bottom: @form-border;
 }
@@ -69,21 +76,20 @@
   }
 }
 
-.form__progr-filter {
-  margin: 0 -20px;
+.programs-filter {
   padding: 21px 20px 10px;
 
   border: none;
   border-bottom: @form-border;
 }
 
-.progr-filter__list {
+.programs-filter__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.progr-filter__item {
+.programs-filter__item {
   position: relative;
   margin-bottom: 12px;
   padding-top: 6px;
@@ -94,7 +100,7 @@
   text-transform: uppercase;
 }
 
-.progr-filter__input {
+.programs-filter__input {
   display: none;
 
   &:checked ~ label::before {
@@ -104,7 +110,7 @@
   }
 }
 
-.progr-filter__item label::before {
+.programs-filter__label::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -115,7 +121,7 @@
   border: @form-border;
 }
 
-.form__userdata {
+.userdata {
   position: relative;
   margin: 0;
   margin-top: 16px;
@@ -194,7 +200,7 @@
   fill: @text-form-color;
 }
 
-.form__comments {
+.comments {
   position: relative;
   margin: 0;
   margin-top: 16px;
@@ -239,12 +245,11 @@
   border: @form-border;
 }
 
-.form__additionally {
+.additionally {
   position: relative;
-  margin-right: 0;
-  margin-left: 20px;
+  margin: 0;
   margin-bottom: 35px;
-  padding: 0 20px 0 0;
+  padding: 0 20px;
   border: none;
 
   &::before {
@@ -260,6 +265,8 @@
 }
 
 .additionally__title {
+  margin-left: -20px;
+  padding-left: 20px;
   margin-bottom: 33px;
   width: 165px;
   background: @main-color;
@@ -303,7 +310,7 @@
   }
 }
 
-.additionally__item label::before {
+.additionally__label::before {
   position: absolute;
   top: 0;
   left: 0;
