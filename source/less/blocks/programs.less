@@ -1,10 +1,10 @@
 .programs {
-  margin: 0 20px;
+  margin: 0 20px -2px;
 }
 
 @media (min-width: @tablet-width) {
   .programs {
-    margin: 0 30px;
+    margin: 0 30px 44px;
   }
 }
 
@@ -28,7 +28,7 @@
 }
 
 .programs__item {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding: 20px 20px 0;
 
   background-color: @items-bg-color;
@@ -36,10 +36,15 @@
 
 @media (min-width: @tablet-width) {
   .programs__item {
+    margin-bottom: 30px;
     padding-top: 75px;
     padding-left: 53px;
     padding-right: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 43px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -77,14 +82,14 @@
   }
 
   &--slim::before {
-    background: url("../../img/icon-cat-slim.svg"), radial-gradient(circle, green 50%, transparent 51%);
+    background: url("../../img/icon-cat-slim.svg"), radial-gradient(circle, #68b738 50%, transparent 51%);
     background-repeat: no-repeat;
     background-size: 50%, 100%;
     background-position: 18px 8px, top;
   }
 
   &--pro::before {
-    background: url("../../img/icon-cat-pro.svg"), radial-gradient(circle, green 50%, transparent 51%);
+    background: url("../../img/icon-cat-pro.svg"), radial-gradient(circle, #68b738 50%, transparent 51%);
     background-repeat: no-repeat;
     background-size: 98%, 100%;
     background-position: left center, top;
@@ -96,6 +101,7 @@
     padding-top: 0;
     padding-left: 0;
     padding-right: 300px;
+    padding-bottom: 24px;
     font-size: 36px;
 
     &::before {
@@ -103,8 +109,8 @@
       left: auto;
       right: 0;
 
-      width: 270px;
-      height: 270px;
+      width: 275px;
+      height: 275px;
     }
 
     &--slim::before {
@@ -144,7 +150,7 @@
 }
 
 .programs__descr {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 
   font-family: @second-font;
   color: @lightdark-color;
@@ -152,18 +158,19 @@
 
 @media (min-width: @tablet-width) {
   .programs__descr {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     padding-left: 0;
     padding-right: 0;
 
+    font-size: 16px;
     line-height: 24px;
 
     &--slim {
-      width: 330px;
+      width: 380px;
     }
 
     &--pro {
-      width: 300px;
+      width: 342px;
     }
   }
 }
@@ -228,5 +235,9 @@
 
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      margin-left: 23px;
+    }
   }
 }

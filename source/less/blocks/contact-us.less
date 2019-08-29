@@ -1,12 +1,18 @@
 .contact-us {
   padding-top: 30px;
-  background: @items-bg-color;
+  background: @main-color;
 }
 
 .contact-us__info {
   display: flex;
   flex-wrap: wrap;
   padding: 0 20px 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .contact-us__info {
+    padding: 0 70px 0;
+  }
 }
 
 .contact-us__title {
@@ -19,6 +25,13 @@
   text-transform: uppercase;
 }
 
+@media (min-width: @tablet-width) {
+  .contact-us__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
 .contact-us__address {
   width: 50%;
   padding-left: 2px;
@@ -27,6 +40,13 @@
   line-height: 20px;
   font-family: @second-font;
   color: @lightdark-color;
+}
+
+@media (min-width: @tablet-width) {
+  .contact-us__address {
+    font-size: 16px;
+    text-align: right;
+  }
 }
 
 .contact-us__street {

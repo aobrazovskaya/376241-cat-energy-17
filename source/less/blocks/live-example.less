@@ -1,0 +1,149 @@
+.live-example {
+  padding: 17px 20px 35px;
+  background: @items-bg-color;
+}
+
+@media (min-width: @tablet-width) {
+  .live-example {
+    padding: 44px 30px 35px;
+    border-top: @border;
+    background: @main-color;
+  }
+}
+
+.live-example__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  color: @dark-color;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+@media (min-width: @tablet-width) {
+  .live-example__title {
+    margin-bottom: 64px;
+    font-size: 60px;
+  }
+}
+
+.live-example__text {
+  margin: 0;
+  margin-bottom: 25px;
+  padding-right: 10px;
+
+  color: @lightdark-color;
+  font-family: @second-font;
+}
+
+@media (min-width: @tablet-width) {
+  .live-example__text {
+    margin-bottom: 52px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.spending {
+  margin-bottom: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .spending {
+    flex-wrap: nowrap;
+  }
+}
+
+.spending__item {
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  width: 124px;
+  height: 56px;
+  text-align: center;
+  border: @border;
+}
+
+@media (min-width: @tablet-width) {
+  .spending__item {
+    margin-right: 42px;
+    width: 162px;
+    height: 72px;
+  }
+}
+
+.spending__value {
+  margin-top: 15px;
+  margin-bottom: 8px;
+
+  color: @dark-color;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .spending__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.spending__title {
+  margin: 0 auto;
+  width: 87px;
+
+  color: @dark-color;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: @second-font;
+  font-weight: normal;
+  background: @items-bg-color;
+}
+
+@media (min-width: @tablet-width) {
+  .spending__title {
+    background: @main-color;
+  }
+}
+
+.spending__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .spending__text {
+    width: 175px;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: right;
+  }
+}
+
+.example-photo {
+  margin: 0 -20px;
+}
+
+.example-photo__img {
+  margin-bottom: 32px;
+}
+
+.example-photo__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 59px 0 64px;
+  text-transform: uppercase;
+}
+
+.example-photo__item {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
