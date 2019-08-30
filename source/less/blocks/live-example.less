@@ -48,7 +48,6 @@
   margin-bottom: 35px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 @media (min-width: @tablet-width) {
@@ -64,6 +63,10 @@
   height: 56px;
   text-align: center;
   border: @border;
+
+  &--weight {
+    margin-right: 32px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -120,6 +123,7 @@
 
 @media (min-width: @tablet-width) {
   .spending__text {
+    margin-left: auto;
     width: 175px;
     font-size: 20px;
     line-height: 26px;
