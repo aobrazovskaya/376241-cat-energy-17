@@ -1,6 +1,17 @@
 .contact-us {
   padding-top: 30px;
   background: @main-color;
+
+  &--grey-bg {
+    background: @items-bg-color;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-us {
+    padding: 0;
+    position: relative;
+  }
 }
 
 .contact-us__info {
@@ -12,6 +23,18 @@
 @media (min-width: @tablet-width) {
   .contact-us__info {
     padding: 0 70px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-us__info {
+    position: absolute;
+    top: 95px;
+    left: 40px;
+    padding: 64px 90px 62px 76px;
+
+    width: 570px;
+    background: @main-color;
   }
 }
 
@@ -49,8 +72,21 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .contact-us__address {
+    padding-left: 47px;
+    text-align: left;
+  }
+}
+
 .contact-us__street {
   margin: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .contact-us__street {
+    margin-bottom: 18px;
+  }
 }
 
 .contact-us__city {
@@ -63,4 +99,10 @@
   height: 362px;
   text-align: center;
   border: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .contact-us iframe {
+    height: 400px;
+  }
 }
