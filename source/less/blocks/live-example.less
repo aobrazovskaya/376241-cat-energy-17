@@ -1,0 +1,350 @@
+.live-example {
+  padding: 17px 20px 18px;
+  background: @items-bg-color;
+}
+
+@media (min-width: @tablet-width) {
+  .live-example {
+    padding: 44px 30px 35px;
+    border-top: @border;
+    background: @main-color;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .live-example {
+    position: relative;
+
+    padding: 0 40px 15px;
+    border-top: none;
+    background: linear-gradient(to top, @items-bg-color 78%, @main-color 78%);
+  }
+}
+
+.live-example__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  color: @dark-color;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .live-example__title {
+    margin-bottom: 64px;
+    font-size: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .live-example__title {
+    margin-top: 57px;
+    margin-bottom: 73px;
+  }
+}
+
+.live-example__text {
+  margin: 0;
+  margin-bottom: 24px;
+  padding-right: 10px;
+
+  color: @lightdark-color;
+  font-family: @second-font;
+}
+
+@media (min-width: @tablet-width) {
+  .live-example__text {
+    margin-top: 10px;
+    margin-bottom: 52px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .live-example__text {
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 68px;
+    padding-top: 72px;
+    padding-right: 175px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.spending {
+  margin-bottom: 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: @tablet-width) {
+  .spending {
+    flex-wrap: nowrap;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .spending {
+    width: 50%;
+    flex-wrap: wrap;
+  }
+}
+
+.spending__item {
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  width: 124px;
+  height: 56px;
+  text-align: center;
+  border: @border;
+
+  &--weight {
+    margin-right: 32px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .spending__item {
+    margin-right: 42px;
+    width: 162px;
+    height: 72px;
+  }
+}
+
+.spending__value {
+  margin-top: 15px;
+  margin-bottom: 8px;
+
+  color: @dark-color;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .spending__value {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.spending__title {
+  margin: 0 auto;
+  width: 87px;
+
+  color: @dark-color;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: @second-font;
+  font-weight: normal;
+  background: @items-bg-color;
+}
+
+@media (min-width: @tablet-width) {
+  .spending__title {
+    font-size: 14px;
+    line-height: 14px;
+    background: @main-color;
+
+    br {
+      display: none;
+    }
+
+    &--weight {
+      width: 114px;
+    }
+
+    &--time {
+      width: 142px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .spending__title {
+    background-color: @items-bg-color;
+  }
+}
+
+.spending__text {
+  margin-top: 14px;
+  margin-bottom: 0;
+  width: 100%;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .spending__text {
+    margin-left: auto;
+    width: 175px;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .spending__text {
+    margin-top: 38px;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.example-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 -20px;
+}
+
+@media (min-width: @tablet-width) {
+  .example-photo {
+    margin: 0 -30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example-photo {
+    position: absolute;
+    top: -69px;
+    right: 50px;
+    width: 50%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .example-photo__img {
+    margin-top: -630px;
+    align-items: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .example-photo__img {
+    max-width: unset;
+  }
+}
+
+.example-photo__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 59px 0 64px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .example-photo__list {
+    order: -1;
+    padding: 0 100px 47px;
+    min-height: 462px;
+    align-items: flex-end;
+    margin-top: 180px;
+    width: 100%;
+
+    background: @items-bg-color;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example-photo__list {
+    padding: 0 21px 25px 59px;
+
+    background: none;
+  }
+}
+
+.example-photo__item {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .example-photo__item {
+    padding-bottom: 5px;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
+}
+
+.example-photo__control {
+  position: relative;
+
+  margin: 0 20px;
+  min-width: 84px;
+  width: 30%;
+  height: 14px;
+  border: @border;
+  border-radius: 6px;
+  background: @main-color;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 4px;
+    height: 6px;
+    width: 45%;
+
+    background-color: @app-bg-color;
+    border-radius: 6px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .example-photo__control {
+    margin: 0 20px 32px;
+    width: 100%;
+    height: 6px;
+    border-radius: 2.5px;
+
+    background-color: #dcdcdc;
+
+    &::before {
+      top: 50%;
+      left: 47%;
+      transform: translateY(-50%);
+
+      width: 34px;
+      height: 34px;
+      border: @border;
+      border-radius: 50%;
+      background-image: radial-gradient(circle, @app-bg-color 17%, @main-color 18%);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &:hover::before {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active::before {
+      border: 2px solid @app-bg-color;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .spending__price {
+    padding-left: 60px;
+  }
+}

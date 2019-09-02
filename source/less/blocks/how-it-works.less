@@ -1,11 +1,12 @@
 .how-it-works {
-  margin: 0 20px;
+  margin: 0 20px 42px;
 }
 
 @media (min-width: @tablet-width) {
   .how-it-works {
     margin-left: 30px;
     margin-right: 0;
+    margin-bottom: -30px;
   }
 }
 
@@ -89,6 +90,10 @@
   &--effect::before {
     background-image: url("../../img/advantage-clock@1x.png");
   }
+
+  &--effect br {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -124,6 +129,10 @@
       font-family: @main-font;
       line-height: 281px;
     }
+
+    &--effect br {
+      display: inline;
+    }
   }
 }
 
@@ -131,6 +140,7 @@
   .how-it-works__item {
     width: 18%;
     margin-right: 102px;
+    margin-bottom: 0;
   }
 
   .how-it-works__item:nth-child(2n) {

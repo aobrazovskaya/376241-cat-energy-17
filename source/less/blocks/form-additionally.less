@@ -1,0 +1,176 @@
+.additionally {
+  position: relative;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0 20px;
+  border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 3px;
+    background: @app-bg-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .additionally {
+    margin-bottom: 22px;
+
+    &::before {
+      top: 22px;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .additionally {
+    margin-left: -50px;
+    margin-bottom: 28px;
+  }
+}
+
+
+.additionally__title {
+  margin-left: -20px;
+  padding-left: 20px;
+  margin-bottom: 33px;
+  width: 184px;
+  background: @main-color;
+
+  font-size: 24px;
+  line-height: 24px;
+  color: @dark-color;
+}
+
+@media (min-width: @tablet-width) {
+  .additionally__title {
+    margin-bottom: 57px;
+    margin-left: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additionally__title {
+    margin-left: 30px;
+  }
+}
+
+.additionally__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .additionally__list {
+    padding-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additionally__list {
+    padding-left: 70px;
+  }
+}
+
+.additionally__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+  padding-top: 5px;
+  padding-left: 46px;
+  padding-bottom: 7px;
+
+  font-size: 16px;
+  text-transform: uppercase;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .additionally__item {
+    margin-bottom: 33px;
+    padding-top: 9px;
+    padding-left: 59px;
+    padding-bottom: 10px;
+    width: 50%;
+    font-size: 20px;
+    line-height: 20px;
+
+    &:last-child {
+      margin-bottom: 33px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additionally__item {
+    width: 26.2%;
+
+    &:nth-child(4n) {
+      width: 21%;
+    }
+  }
+}
+
+.additionally__input {
+  &:checked ~ label::before {
+    background-image: url("../../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 17px;
+    background-position: center;
+  }
+
+  &:hover,
+  &:focus {
+    & ~ label::before {
+      outline: @hover-input-border;
+    }
+  }
+
+  &:active {
+    & ~ label {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .additionally__input:checked ~ label::before {
+    background-size: 21px 16px;
+  }
+}
+
+.additionally__label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: @form-border;
+}
+
+@media (min-width: @tablet-width) {
+  .additionally__label::before {
+    width: 40px;
+    height: 40px;
+  }
+}
