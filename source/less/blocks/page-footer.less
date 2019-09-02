@@ -25,11 +25,12 @@
   align-items: center;
   height: 92px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 
-  &:focus {
+  &:active {
     opacity: 0.6;
   }
 }
@@ -98,12 +99,14 @@
     vertical-align: middle;
   }
 
-  :hover,
-  :focus {
-    fill: @app-bg-color;
+  &:hover,
+  &:focus {
+    svg {
+      fill: @app-bg-color;
+    }
   }
 
-  :focus {
+  &:active svg {
     opacity: 0.3;
   }
 }
@@ -150,7 +153,7 @@
   font-size: 16px;
   line-height: 16px;
 
-  :focus {
+  &:active {
     opacity: 0.3;
   }
 }
@@ -165,15 +168,19 @@
   margin-right: -8px;
   width: 42px;
   height: 42px;
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: @app-bg-color;
+    }
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .developer__logo svg {
-  :hover,
-  :focus {
-    fill: @app-bg-color;
-  }
-
-  :focus {
-    opacity: 0.3;
-  }
+  fill: #666666;
 }

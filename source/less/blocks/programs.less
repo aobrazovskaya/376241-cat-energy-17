@@ -10,7 +10,7 @@
 
 @media (min-width: @desktop-width) {
   .programs {
-    margin: 0 40px 91px;
+    margin: 0 40px 70px;
   }
 }
 
@@ -23,12 +23,13 @@
 @media (min-width: @desktop-width) {
   .programs__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
 
 .programs__item {
-  margin-bottom: 21px;
+  margin-bottom: 17px;
   padding: 20px 20px 0;
 
   background-color: @items-bg-color;
@@ -51,9 +52,9 @@
 @media (min-width: @desktop-width) {
   .programs__item {
     margin: 0;
-    padding-top: 47px;
-    padding-left: 52px;
-    padding-right: 55px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 45px;
     width: 46.5%;
   }
 }
@@ -126,25 +127,27 @@
 @media (min-width: @desktop-width) {
   .programs__title {
     margin-bottom: 40px;
-    padding-top: 30px;
-    padding-left: 164px;
+    padding-top: 38px;
+    padding-left: 182px;
     padding-right: 0;
-    padding-bottom: 30px;
+    padding-bottom: 34px;
 
     &::before {
       top: 0;
       left: 0;
 
-      width: 100px;
-      height: 100px;
+      width: 140px;
+      height: 140px;
     }
 
     &--slim::before {
-      background-position: 25px 10px, 0 0;
+      background-position: 35px 3px, 4px -10px;
+      background-size: 51%, 97%;
     }
 
     &--pro::before {
-      background-position: -5px 30px, 0 0;
+      background-position: 2px 31px, 1px -10px;
+      background-size: 95%, 97%;
     }
   }
 }
@@ -177,8 +180,9 @@
 
 @media (min-width: @desktop-width) {
   .programs__descr {
-    margin-bottom: 20px;
-    width: 430px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    width: 492px;
   }
 }
 
@@ -191,6 +195,7 @@
   display: flex;
   align-items: center;
   padding-top: 20px;
+  padding-left: 20px;
   padding-bottom: 21px;
 
   font-size: 16px;
@@ -208,10 +213,9 @@
     height: 12px;
     background-image: url("../../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
-
   }
-  
-  &:hover{
+
+  &:hover {
     &::after {
       width: 34px;
       background-image: url("../../img/icon-right-arrow-verylong.svg");

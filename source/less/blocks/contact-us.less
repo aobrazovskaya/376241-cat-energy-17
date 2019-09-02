@@ -7,9 +7,14 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .contact-us {
     padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-us {
     position: relative;
   }
 }
@@ -23,6 +28,8 @@
 @media (min-width: @tablet-width) {
   .contact-us__info {
     padding: 0 70px 0;
+    min-height: 201px;
+    align-items: center;
   }
 }
 
@@ -50,8 +57,15 @@
 
 @media (min-width: @tablet-width) {
   .contact-us__title {
+    padding-right: 95px;
     font-size: 20px;
     line-height: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-us__title {
+    padding-right: 0;
   }
 }
 
@@ -83,7 +97,7 @@
   margin: 0;
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .contact-us__street {
     margin-bottom: 18px;
   }
