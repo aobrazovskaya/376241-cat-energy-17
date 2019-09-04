@@ -18,6 +18,8 @@
 
 @media (min-width: @tablet-width) {
   .gift {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 76px;
     padding: 66px 121px 72px 92px;
     text-align: left;
@@ -34,9 +36,11 @@
 
 @media (min-width: @desktop-width) {
   .gift {
+    flex-direction: column;
+    align-items: center;
     margin-right: 10px;
     margin-bottom: 87px;
-    padding: 65px 40px 0;
+    padding: 65px 0;
 
     width: 245px;
     min-height: 289px;
@@ -70,10 +74,9 @@
 
 @media (min-width: @tablet-width) {
   .gift__text {
-    display: inline-block;
+    margin: 0;
     padding: 0;
     padding-top: 6px;
-    float: right;
 
     text-align: left;
   }
@@ -81,11 +84,7 @@
 
 @media (min-width: @desktop-width) {
   .gift__text {
-    display: inline-block;
-    padding: 0;
     padding-top: 58px;
-    float: none;
-
     text-align: center;
   }
 }
