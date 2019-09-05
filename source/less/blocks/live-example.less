@@ -5,7 +5,7 @@
 
 @media (min-width: @tablet-width) {
   .live-example {
-    padding: 44px 30px 35px;
+    padding: 44px 30px 0;
     border-top: @border;
     background: @main-color;
   }
@@ -15,7 +15,7 @@
   .live-example {
     position: relative;
 
-    padding: 0 40px 15px;
+    padding: 0 110px 15px;
     border-top: none;
     background: linear-gradient(to top, @items-bg-color 78%, @main-color 78%);
   }
@@ -216,7 +216,7 @@
   .example-photo {
     position: absolute;
     top: -69px;
-    right: 50px;
+    right: 85px;
     width: 50%;
   }
 }
@@ -238,6 +238,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 35px;
   padding: 0 59px 0 64px;
   text-transform: uppercase;
 }
@@ -245,7 +246,7 @@
 @media (min-width: @tablet-width) {
   .example-photo__list {
     order: -1;
-    padding: 0 100px 47px;
+    padding: 0 100px 68px;
     min-height: 462px;
     align-items: flex-end;
     margin-top: 180px;
@@ -257,13 +258,14 @@
 
 @media (min-width: @desktop-width) {
   .example-photo__list {
-    padding: 0 21px 25px 59px;
+    padding: 0 55px 47px 95px;
 
     background: none;
   }
 }
 
 .example-photo__item {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -312,7 +314,7 @@
 
 @media (min-width: @tablet-width) {
   .example-photo__control {
-    margin: 0 20px 32px;
+    margin: 0 20px 12px;
     width: 100%;
     height: 6px;
     border-radius: 2.5px;

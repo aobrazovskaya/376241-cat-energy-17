@@ -18,6 +18,7 @@
 
 @media (min-width: @tablet-width) {
   .promo {
+    margin-bottom: 0;
     position: relative;
     padding: 0;
     background: none;
@@ -26,18 +27,18 @@
 
 @media (min-width: @desktop-width) {
   .promo {
-    margin-top: -165px;
-    margin-bottom: 80px;
-    min-height: 696px;
+    margin: -115px auto 80px;
+    padding-bottom: 55px;
 
     background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to left, @app-bg-color 0, @app-bg-color 50%, transparent 50%, transparent 100%);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: top right, 0 -65px;
+    background-size: 50%, 100%;
+  }
 
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      .promo {
-        background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to left, @app-bg-color 0, @app-bg-color 50%, transparent 50%, transparent 100%);
-      }
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .promo {
+      background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to left, @app-bg-color 0, @app-bg-color 50%, transparent 50%, transparent 100%);
     }
   }
 }
@@ -72,6 +73,7 @@
   .promo__title {
     padding-top: 224px;
     padding-right: 50%;
+    padding-left: 190px;
   }
 }
 
@@ -99,6 +101,7 @@
   .promo__item {
     padding-bottom: 40px;
     padding-right: 50%;
+    padding-left: 190px;
   }
 }
 
@@ -110,7 +113,7 @@
 @media (min-width: @desktop-width) {
   .promo__main-image {
     margin-top: -300px;
-    margin-right: 258px;
+    margin-right: 327px;
   }
 }
 
@@ -130,6 +133,7 @@
 @media (min-width: @desktop-width) {
   .promo__button {
     top: 455px;
+    left: 190px;
   }
 }
 

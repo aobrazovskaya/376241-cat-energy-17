@@ -9,16 +9,18 @@
     position: absolute;
     content: "";
     top: 12px;
-    left: 0;
+    left: 50%;
     z-index: -1;
-    width: 100%;
+    width: 100vw;
     height: 3px;
     background: @app-bg-color;
+    transform: translateX(-50%);
   }
 }
 
 @media (min-width: @tablet-width) {
   .additionally {
+    padding: 0 20px;
     margin-bottom: 22px;
 
     &::before {
@@ -27,19 +29,18 @@
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .additionally {
-    margin-left: -50px;
-    margin-bottom: 28px;
+    padding: 0 40px;
+    margin-bottom: 32px;
   }
 }
 
 
 .additionally__title {
   margin-left: -20px;
-  padding-left: 20px;
   margin-bottom: 33px;
-  width: 184px;
+  padding: 0 20px;
   background: @main-color;
 
   font-size: 24px;
@@ -120,7 +121,7 @@
 
 @media (min-width: @desktop-width) {
   .additionally__item {
-    width: 26.2%;
+    width: 25.2%;
 
     &:nth-child(4n) {
       width: 21%;

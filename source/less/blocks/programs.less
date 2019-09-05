@@ -10,7 +10,9 @@
 
 @media (min-width: @desktop-width) {
   .programs {
-    margin: 0 40px 70px;
+    margin: 0 auto 70px;
+    padding: 0 40px;
+    width: 1300px;
   }
 }
 
@@ -29,7 +31,7 @@
 }
 
 .programs__item {
-  margin-bottom: 17px;
+  margin-bottom: 20px;
   padding: 20px 20px 0;
 
   background-color: @items-bg-color;
@@ -195,7 +197,6 @@
   display: flex;
   align-items: center;
   padding-top: 20px;
-  padding-left: 20px;
   padding-bottom: 21px;
 
   font-size: 16px;
@@ -243,5 +244,11 @@
     &::after {
       margin-left: 23px;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs__link {
+    padding-left: 20px;
   }
 }
