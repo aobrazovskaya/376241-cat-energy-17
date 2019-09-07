@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/ArialMT.woff2" as="font">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
 
@@ -45,9 +52,9 @@
           <h2 class="main-header__title">Подбор программы</h2>
           <p class="main-header__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         </div>
-        <div class="form-data--wrapper">
-          <fieldset class="main-data">
-            <legend class="visually-hidden">Основные данные:</legend>
+        <div class="form__wrapper">
+          <div class="main-data">
+            <p class="visually-hidden">Основные данные:</p>
             <ul class="main-data__list">
               <li class="main-data__item">
                 <label class="main-data__label" for="form-name">Имя:*</label>
@@ -62,9 +69,9 @@
                 <input class="main-data__input" id="form-age" name="age" type="number" placeholder="7">
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="programs-filter">
-            <legend class="visually-hidden">Вид программы:</legend>
+          </div>
+          <div class="programs-filter">
+            <p class="visually-hidden">Вид программы:</p>
             <ul class="programs-filter__list">
               <li class="programs-filter__item">
                 <input class="programs-filter__input visually-hidden" id="filter-slim" name="filter-program" value="slim" type="radio" checked="">
@@ -79,10 +86,10 @@
                 <label class="programs-filter__label" for="filter-no-program">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
-          </fieldset>
+          </div>
         </div>
-        <fieldset class="userdata">
-          <legend class="userdata__title">Контактные данные (владельца кота)</legend>
+        <div class="userdata">
+          <p class="userdata__title">Контактные данные (владельца кота)</p>
           <ul class="userdata__list">
             <li class="userdata__item">
               <label class="userdata__label" for="user-email">E-mail:*</label>
@@ -103,16 +110,16 @@
               </span>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="comments">
-          <legend class="comments__title">Комментарий</legend>
+        </div>
+        <div class="comments">
+          <p class="comments__title">Комментарий</p>
           <textarea class="comments__text" name="comments" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
-        <fieldset class="additionally">
-          <legend class="additionally__title">Дополнительно</legend>
+        </div>
+        <div class="additionally">
+          <p class="additionally__title">Дополнительно</p>
           <ul class="additionally__list">
             <li class="additionally__item">
-              <input class="additionally__input visually-hidden" id="filter-sweetener" name="add-filter" value="sweetener" type="checkbox" checked="">
+              <input class="additionally__input visually-hidden" id="filter-sweetener" name="add-filter" value="sweetener" type="checkbox" checked="checked">
               <label class="additionally__label" for="filter-sweetener">Сахарозаменитель</label>
             </li>
             <li class="additionally__item">
@@ -128,11 +135,13 @@
               <label class="additionally__label" for="filter-vitamins">Витамины</label>
             </li>
           </ul>
-        </fieldset>
-        <div class="form__button">
-          <button class="button button--green" type="submit">Отправить заявку</button>
         </div>
-        <small class="form__required">* &mdash; Обязательные поля</small>
+        <div class="form__submission">
+          <div class="form__button">
+            <button class="button button--green" type="submit">Отправить заявку</button>
+          </div>
+          <small class="form__required">* &mdash; Обязательные поля</small>
+        </div>
       </form>
       <section class="contact-us contact-us--grey-bg">
         <div class="contact-us__info">
@@ -142,7 +151,9 @@
             <p class="contact-us__city">Санкт-Петербург</p>
           </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen=""></iframe>
+        <div class="contact-us__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen></iframe>
+        </div>
       </section>
     </main>
 
@@ -183,7 +194,7 @@
       </div>
     </footer>
 
-    <script src="/js/index.js"></script>
+    <script src="js/index.js"></script>
 
   </body>
 </html>

@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/ArialMT.woff2" as="font">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
 
@@ -114,9 +121,9 @@
             <img class="example-photo__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Фото живого примера">
           </picture>
           <div class="example-photo__list">
-            <p class="example-photo__item">Было</p>
+            <button class="example-photo__button">Было</button>
             <div class="example-photo__control"></div>
-            <p class="example-photo__item">Стало</p>
+            <button class="example-photo__button">Стало</button>
           </div>
         </div>
       </section>
@@ -128,7 +135,9 @@
             <p class="contact-us__city">Санкт-Петербург</p>
           </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen></iframe>
+        <div class="contact-us__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen></iframe>
+        </div>
       </section>
     </main>
 
@@ -169,7 +178,7 @@
       </div>
     </footer>
 
-    <script src="/js/index.js"></script>
+    <script src="js/index.js"></script>
 
   </body>
 </html>

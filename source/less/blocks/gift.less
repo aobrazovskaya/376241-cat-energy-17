@@ -2,7 +2,7 @@
   margin: 0 auto 35px;
   padding-top: 66px;
   text-align: center;
-  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-color: @app-bg-color;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,52 +12,55 @@
 @media (min-resolution: @retina-dpi),
   (min-resolution: @retina-dppx) {
   .gift {
-    background-image: url("../../img/gift-photo-mobile@2x.jpg");
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
 }
 
 @media (min-width: @tablet-width) {
   .gift {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 92px;
-    padding: 66px 121px 68px 92px;
+    padding: 62px 0 70px 90px;
     width: 100%;
     text-align: left;
-    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
   }
 
   @media (min-resolution: @retina-dpi),
     (min-resolution: @retina-dppx) {
     .gift {
-      background-image: url("../../img/gift-photo-tablet@2x.jpg");
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .gift {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 87px;
+    margin-bottom: 0;
     padding: 65px 0 0;
+    width: 19%;
 
-    width: 245px;
-    min-height: 289px;
     text-align: center;
-    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     .gift {
-      background-image: url("../../img/gift-photo-desktop@2x.jpg");
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
     }
   }
 }
 
 .gift__img {
   fill: @main-color;
+  vertical-align: middle;
+}
+
+@media (min-width: @desktop-width) {
+  .gift__img {
+    width: 100%;
+    vertical-align: top;
+    text-align: center;
+  }
 }
 
 .gift__text {
@@ -74,16 +77,19 @@
 
 @media (min-width: @tablet-width) {
   .gift__text {
-    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 164px;
+    margin-left: 275px;
     padding: 0;
-    padding-top: 6px;
-
+    padding-top: 8px;
     text-align: left;
   }
 }
 
 @media (min-width: @desktop-width) {
   .gift__text {
+    margin: 0 auto;
     padding-top: 58px;
     text-align: center;
   }

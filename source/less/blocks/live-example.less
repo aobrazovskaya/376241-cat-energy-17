@@ -1,5 +1,5 @@
 .live-example {
-  padding: 17px 20px 18px;
+  padding: 17px 20px 35px;
   background: @items-bg-color;
 }
 
@@ -7,7 +7,7 @@
   .live-example {
     padding: 44px 30px 0;
     border-top: @border;
-    background: @main-color;
+    background: linear-gradient(to top, @items-bg-color 23%, @main-color 24%);
   }
 }
 
@@ -47,7 +47,7 @@
 
 .live-example__text {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   padding-right: 10px;
 
   color: @lightdark-color;
@@ -215,7 +215,9 @@
 @media (min-width: @desktop-width) {
   .example-photo {
     position: absolute;
-    top: -69px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 319px;
     right: 85px;
     width: 50%;
   }
@@ -231,6 +233,7 @@
 @media (min-width: @tablet-width) {
   .example-photo__img {
     max-width: unset;
+    padding-left: 15px;
   }
 }
 
@@ -238,18 +241,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 35px;
-  padding: 0 59px 0 64px;
+  margin-top: 32px;
+  padding: 0 60px 0 64px;
   text-transform: uppercase;
 }
 
 @media (min-width: @tablet-width) {
   .example-photo__list {
     order: -1;
-    padding: 0 100px 68px;
-    min-height: 462px;
+    padding: 204px 100px 68px;
     align-items: flex-end;
-    margin-top: 180px;
+    margin-top: 344px;
     width: 100%;
 
     background: @items-bg-color;
@@ -258,21 +260,24 @@
 
 @media (min-width: @desktop-width) {
   .example-photo__list {
+    margin-top: 180px;
     padding: 0 55px 47px 95px;
-
     background: none;
   }
 }
 
-.example-photo__item {
+.example-photo__button {
   margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  border: none;
+  background-color: transparent;
 }
 
 @media (min-width: @tablet-width) {
-  .example-photo__item {
+  .example-photo__button {
     padding-bottom: 5px;
     font-size: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.23);
@@ -291,7 +296,7 @@
 .example-photo__control {
   position: relative;
 
-  margin: 0 20px;
+  margin: 0 18px;
   min-width: 84px;
   width: 30%;
   height: 14px;

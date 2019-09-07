@@ -37,6 +37,7 @@
 }
 
 .userdata__title {
+  margin-top: 0;
   margin-left: -20px;
   margin-bottom: 31px;
   padding: 15px 0 0 20px;
@@ -149,19 +150,25 @@
 
 @media (min-width: @tablet-width) {
   .userdata__input {
-    margin-left: 16px;
+    margin-left: 17px;
     padding-top: 10px;
-    padding-left: 17px;
     padding-bottom: 10px;
-
     font-size: 20px;
     line-height: 20px;
+
+    &--email {
+      padding-left: 22px;
+    }
+
+    &--phone {
+      padding-left: 15px;
+    }
   }
 }
 
 .userdata__icon {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 15px;
+  right: 18px;
   fill: @text-form-color;
 }

@@ -65,7 +65,8 @@ gulp.task("server", function () {
     notify: false,
     open: true,
     cors: true,
-    ui: false
+    ui: false,
+    ghostMode: false
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));

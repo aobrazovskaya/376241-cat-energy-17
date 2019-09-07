@@ -1,7 +1,7 @@
 .additionally {
   position: relative;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   padding: 0 20px;
   border: none;
 
@@ -32,7 +32,7 @@
 @media (min-width: @desktop-width) {
   .additionally {
     padding: 0 40px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 }
 
@@ -41,8 +41,9 @@
   margin-left: -20px;
   margin-bottom: 33px;
   padding: 0 20px;
-  background: @main-color;
+  width: 184px;
 
+  background: @main-color;
   font-size: 24px;
   line-height: 24px;
   color: @dark-color;
@@ -54,6 +55,7 @@
     margin-left: 10px;
     padding-left: 40px;
     padding-right: 40px;
+    width: 290px;
 
     font-size: 36px;
     line-height: 36px;
@@ -109,9 +111,13 @@
     padding-top: 9px;
     padding-left: 59px;
     padding-bottom: 10px;
-    width: 50%;
+    width: 51%;
     font-size: 20px;
     line-height: 20px;
+
+    &:nth-child(2n) {
+      width: 49%;
+    }
 
     &:last-child {
       margin-bottom: 33px;
@@ -123,6 +129,10 @@
   .additionally__item {
     width: 25.2%;
 
+    &:nth-child(2n) {
+      width: 25.2%;
+    }
+
     &:nth-child(4n) {
       width: 21%;
     }
@@ -131,7 +141,7 @@
 
 .additionally__input {
   &:checked ~ label::before {
-    background-image: url("../../img/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-size: 22px 17px;
     background-position: center;

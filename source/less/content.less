@@ -2,6 +2,12 @@ html {
   box-sizing: border-box;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
   overflow-x: hidden;
   min-width: 320px;
@@ -19,12 +25,6 @@ body {
   body {
     margin: 0 auto;
   }
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
 }
 
 a {
